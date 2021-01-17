@@ -1,17 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function Welcome() {
+export default function WelcomeSection() {
 	return (
-		<WelcomeSection>
+		<WelcomeWrapper id='welcome'>
 			<h1>Willkommen</h1>
 			<h2>Welcome</h2>
 			<h3>Servus</h3>
-		</WelcomeSection>
+		</WelcomeWrapper>
 	);
 }
 
-const WelcomeSection = styled.section`
+const WelcomeWrapper = styled.section`
 	display: flex;
 	flex-direction: column;
 	align-items: center;

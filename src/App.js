@@ -1,16 +1,20 @@
 import React from "react";
 import GlobalStyle from "./theme/globalStyles";
 import AppHeader from "./components/AppHeader";
-import Welcome from "./components/Welcome";
-import AboutMe from "./components/AboutMe";
+import WelcomeSection from "./components/WelcomeSection";
+import AboutMeSection from "./components/AboutMeSection";
+import ExperienceSection from "./components/ExperienceSection";
+import ProjectsSection from "./components/ProjectsSection";
 
 function App() {
 	return (
 		<div className='App'>
 			<GlobalStyle />
 			<AppHeader />
-			<Welcome />
-			<AboutMe />
+			<WelcomeSection />
+			<AboutMeSection />
+			<ExperienceSection />
+			<ProjectsSection />
 		</div>
 	);
 }
