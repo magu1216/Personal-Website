@@ -21,7 +21,6 @@ const Navi = styled.nav`
 	display: flex;
 	margin-right: 30px;
 	justify-content: right;
-	background-color: black;
 	color: white;
 	display: flex;
 	align-items: center;

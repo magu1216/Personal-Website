@@ -16,7 +16,7 @@ const Header = styled.header`
 	z-index: 0;
 	align-items: center;
 	justify-content: space-between;
-	background-color: black;
+	background-color: none;
 	color: white;
 	height: 6vh;
 	width: 100vw;

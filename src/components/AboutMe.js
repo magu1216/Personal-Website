@@ -17,7 +17,7 @@ const AboutMeSection = styled.section`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 44vh;
+	height: 100vh;
 	background: rgb(98, 98, 98);
 	background: radial-gradient(
 		circle,
