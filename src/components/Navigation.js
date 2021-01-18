@@ -1,12 +1,25 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-scroll";
 
 export default function Navigation() {
 	return (
 		<Navi>
-			<NavItem>About Me</NavItem>
-			<NavItem>Experiences</NavItem>
-			<NavItem>Abilities</NavItem>
+			<NavItem>
+				<Link to='aboutme' spy={true} smooth={true}>
+					About Me
+				</Link>
+			</NavItem>
+			<NavItem>
+				<Link to='experience' spy={true} smooth={true}>
+					Experience
+				</Link>
+			</NavItem>
+			<NavItem>
+				<Link to='projects' spy={true} smooth={true}>
+					Projects
+				</Link>
+			</NavItem>
 			<Contact
 				as='a'
 				href='mailto:guertnermarkus@gmail.com'
@@ -21,7 +34,6 @@ const Navi = styled.nav`
 	display: flex;
 	margin-right: 30px;
 	justify-content: right;
-	background-color: black;
 	color: white;
 	display: flex;
 	align-items: center;
@@ -40,6 +52,7 @@ const NavItem = styled.div`
 	&:hover {
 		color: gray;
 		font-size: 20px;
+		border-bottom: goldenrod 2px solid;
 		cursor: pointer;
 	}
 `;
@@ -49,7 +62,7 @@ const Contact = styled.button`
 	justify-content: center;
 	border-style: none;
 	border-radius: 20px;
-	margin: 10px;
+	margin: 0 20px;
 	padding: 10px;
 	min-width: 120px;
 	background-color: gray;
@@ -57,7 +70,8 @@ const Contact = styled.button`
 	color: inherit;
 
 	&:hover {
-		background-color: darkgoldenrod;
+		background-color: goldenrod;
+		color: black;
 		cursor: pointer;
 	}
 `;

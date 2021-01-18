@@ -1,11 +1,16 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-scroll";
 import Navigation from "./Navigation";
 
 export default function AppHeader() {
 	return (
 		<Header>
-			<h1>Markus Gürtner</h1>
+			<h1>
+				<Link to='welcome' spy={true} smooth={true}>
+					Markus Gürtner
+				</Link>
+			</h1>
 			<Navigation />
 		</Header>
 	);
@@ -16,9 +21,9 @@ const Header = styled.header`
 	z-index: 0;
 	align-items: center;
 	justify-content: space-between;
-	background-color: black;
+	background-color: none;
 	color: white;
-	height: 80px;
+	height: 6vh;
 	width: 100vw;
 	position: fixed;
 
@@ -28,5 +33,9 @@ const Header = styled.header`
 		margin-left: 100px;
 		margin-top: 5px;
 		min-width: 300px;
+
+		&:hover {
+			cursor: pointer;
+		}
 	}
 `;
