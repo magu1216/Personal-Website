@@ -5,6 +5,7 @@ import WelcomeSection from "./components/WelcomeSection";
 import AboutMeSection from "./components/AboutMeSection";
 import ExperienceSection from "./components/ExperienceSection";
 import ProjectsSection from "./components/ProjectsSection";
+import styled from "styled-components";
 
 function App() {
 	return (
