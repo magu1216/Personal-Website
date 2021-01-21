@@ -5,7 +5,11 @@ export default function AboutMeSection() {
 	return (
 		<AboutMeWrapper id='aboutme'>
 			<TextBox>
-				<h2>Location</h2>
+				<h1>Business</h1>
+				<p>Junior Web Developer</p>
+				<h1>Location</h1>
+				<p>Munich</p>
+				<h1>Location</h1>
 				<p>Munich</p>
 			</TextBox>
 			<img
@@ -32,20 +36,27 @@ const AboutMeWrapper = styled.section`
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
-	background: rgb(98, 98, 98);
-	background: radial-gradient(
-		circle,
-		rgba(98, 98, 98, 1) 0%,
-		rgba(143, 255, 225, 1) 100%
-	);
+	background: #313131;
 
 	img {
 		width: 400px;
 		border-radius: 200px;
+		border: 3px solid goldenrod;
 	}
 `;
 
 const TextBox = styled.div`
-	width: 20vw;
 	margin: 20px;
+	width: 400px;
+
+	h1 {
+		&::first-letter {
+			color: goldenrod;
+		}
+	}
+
+	p {
+		font-size: 20px;
+		color: silver;
+	}
 `;

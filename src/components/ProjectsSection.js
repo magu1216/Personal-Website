@@ -14,5 +14,5 @@ const ProjectsWrapper = styled.section`
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
-	background: crimson;
+	background: darkgray;
 `;

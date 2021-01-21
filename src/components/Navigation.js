@@ -50,7 +50,6 @@ const NavItem = styled.div`
 	align-items: center;
 
 	&:hover {
-		color: gray;
 		font-size: 20px;
 		border-bottom: goldenrod 2px solid;
 		cursor: pointer;

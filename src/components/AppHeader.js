@@ -31,7 +31,7 @@ const Header = styled.header`
 		font-family: "Charmonman", cursive;
 		font-size: 40px;
 		margin-left: 100px;
-		margin-top: 5px;
+		margin-top: 20px;
 		min-width: 300px;
 
 		&:hover {
