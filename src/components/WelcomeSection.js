@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import MeWide from "../images/MeWide.jpg";
 
 export default function WelcomeSection() {
 	return (
@@ -14,18 +15,22 @@ export default function WelcomeSection() {
 const WelcomeWrapper = styled.section`
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	justify-content: center;
 	height: 100vh;
-	background: black;
+	background: no-repeat url(${MeWide});
+	background-size: cover;
+	background-position: center;
 
 	h1,
 	h2,
 	h3 {
+		font-weight: lighter;
 		padding: 30px;
+		transition: all 0.3s ease;
 
 		&:hover {
-			transform: rotateX(180deg);
+			color: goldenrod;
+			padding-left: 3vw;
 		}
 	}
 

@@ -14,5 +14,5 @@ const ExperienceWrapper = styled.section`
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
-	background: chartreuse;
+	background: dimgray;
 `;
