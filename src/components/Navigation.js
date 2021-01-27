@@ -6,6 +6,11 @@ export default function Navigation() {
 	return (
 		<Navi>
 			<NavItem>
+				<Link to='welcome' spy={true} smooth={true}>
+					Home
+				</Link>
+			</NavItem>
+			<NavItem>
 				<Link to='aboutme' spy={true} smooth={true}>
 					About Me
 				</Link>
@@ -20,57 +25,35 @@ export default function Navigation() {
 					Projects
 				</Link>
 			</NavItem>
-			<Contact
-				as='a'
-				href='mailto:guertnermarkus@gmail.com'
-			>
-				Contact Me
-			</Contact>
+			<NavItem>
+				<Link to='contact' spy={true} smooth={true}>
+					Contact
+				</Link>
+			</NavItem>
 		</Navi>
 	);
 }
 
 const Navi = styled.nav`
 	display: flex;
-	margin-right: 30px;
 	justify-content: right;
 	color: white;
 	display: flex;
 	align-items: center;
 	height: 60px;
-	width: 50vw;
 `;
 
 const NavItem = styled.div`
 	display: flex;
-	min-width: 150px;
-	width: auto;
+	width: 140px;
+	padding: 25px;
 	height: 80px;
 	justify-content: center;
 	align-items: center;
 
 	&:hover {
-		font-size: 20px;
-		border-bottom: goldenrod 2px solid;
-		cursor: pointer;
-	}
-`;
-
-const Contact = styled.button`
-	display: flex;
-	justify-content: center;
-	border-style: none;
-	border-radius: 20px;
-	margin: 0 20px;
-	padding: 10px;
-	min-width: 120px;
-	background-color: gray;
-	text-decoration: none;
-	color: inherit;
-
-	&:hover {
-		background-color: goldenrod;
-		color: black;
+		font-size: 18px;
+		border-bottom: goldenrod 3px solid;
 		cursor: pointer;
 	}
 `;
